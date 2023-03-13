@@ -251,7 +251,6 @@ class ocr_Reader:
 
         image = Image.open(self.path)
         image = image.crop((x1, y1, x2, y2))     
-        image.show()
         image.save("tmp.jpg")
         image.close()
 
